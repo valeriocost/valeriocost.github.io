@@ -39,8 +39,14 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 
     
     /* Github Calendar - https://github.com/IonicaBizau/github-calendar */
-    new GitHubCalendar("#github-graph", "IonicaBizau", { responsive: true });
+    // new GitHubCalendar("github-graph", "valeriocost", { responsive: true });
+	
+	// new GitHubCalendar("github-graph", "valeriocost", {
+	// 	proxy () {
+	// 	  return fetch(`https://your-proxy.com/github?user=valeriocost`)
+	// 	}
+	//  }).then(r => r.text())
     
     
     /* Github Activity Feed - https://github.com/caseyscarborough/github-activity */
-    GitHubActivity.feed({ username: "mdo", selector: "#ghfeed" });
+    GitHubActivity.feed({ username: "valeriocost", selector: "#ghfeed" });
